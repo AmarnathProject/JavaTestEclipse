@@ -19,19 +19,19 @@ public class Matrics {
 	private String name;
 
 	@Column(name = "SCHOOL")
-	private String School;
+	private String school;
 
 	@Column(name = "UNIVERSITY")
-	private String University;
+	private String university;
 
-	@Column(name="CITY")
+	@Column(name = "CITY")
 	private String city;
-	
-	@Column(name="STATE")
-	private String State;
+
+	@Column(name = "STATE")
+	private String state;
 
 	@Column(name = "PINCODE")
-	private Integer PinCode;
+	private Integer pincode;
 
 	public int getMid() {
 		return mid;
@@ -49,22 +49,6 @@ public class Matrics {
 		this.name = name;
 	}
 
-	public String getSchool() {
-		return School;
-	}
-
-	public void setSchool(String school) {
-		School = school;
-	}
-
-	public String getUniversity() {
-		return University;
-	}
-
-	public void setUniversity(String university) {
-		University = university;
-	}
-
 	public String getCity() {
 		return city;
 	}
@@ -73,22 +57,36 @@ public class Matrics {
 		this.city = city;
 	}
 
+	public String getSchool() {
+		return school;
+	}
+
+	public void setSchool(String school) {
+		this.school = school;
+	}
+
+	public String getUniversity() {
+		return university;
+	}
+
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
 	public String getState() {
-		return State;
+		return state;
 	}
 
 	public void setState(String state) {
-		State = state;
+		this.state = state;
 	}
 
-	public Integer getPinCode() {
-		return PinCode;
+	public Integer getPincode() {
+		return pincode;
 	}
 
-	public void setPinCode(Integer pinCode) {
-		PinCode = pinCode;
+	public void setPincode(Integer pincode) {
+		this.pincode = pincode;
 	}
-	
-	
 
 }

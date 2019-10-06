@@ -17,19 +17,19 @@ public class AddressEntity {
 	private int addrID;
 
 	@Column(name = "STREET_NAME")
-	private String StreetNo;
+	private String street;
 
 	@Column(name = "CITY")
-	private String City;
+	private String city;
 
 	@Column(name = "STATE")
-	private String State;
+	private String state;
 
 	@Column(name = "COUNTRY")
-	private String Country;
+	private String country;
 
 	@Column(name = "PINCODE")
-	private Integer PinCode;
+	private Integer pincode;
 
 	@ManyToOne
 	private UserEntity users;
@@ -42,44 +42,44 @@ public class AddressEntity {
 		this.addrID = addrID;
 	}
 
-	public String getStreetNo() {
-		return StreetNo;
+	public String getStreet() {
+		return street;
 	}
 
-	public void setStreetNo(String streetNo) {
-		StreetNo = streetNo;
+	public void setStreet(String street) {
+		this.street = street;
 	}
 
 	public String getCity() {
-		return City;
+		return city;
 	}
 
 	public void setCity(String city) {
-		City = city;
+		this.city = city;
 	}
 
 	public String getState() {
-		return State;
+		return state;
 	}
 
 	public void setState(String state) {
-		State = state;
+		this.state = state;
 	}
 
 	public String getCountry() {
-		return Country;
+		return country;
 	}
 
 	public void setCountry(String country) {
-		Country = country;
+		this.country = country;
 	}
 
-	public Integer getPinCode() {
-		return PinCode;
+	public Integer getPincode() {
+		return pincode;
 	}
 
-	public void setPinCode(Integer pinCode) {
-		PinCode = pinCode;
+	public void setPincode(Integer pincode) {
+		this.pincode = pincode;
 	}
 
 	public UserEntity getUsers() {

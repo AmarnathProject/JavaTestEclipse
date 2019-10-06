@@ -22,19 +22,19 @@ public class UserEntity {
 	private int uid;
 
 	@Column(name = "USER_NAME")
-	private String Name;
+	private String name;
 
 	@Column(name = "PANCARD")
-	private String PanCard_Number;
+	private String panCard;
 
 	@Column(name = "ADHAR")
-	private String AdharCard_Number;
+	private String adhar;
 
 	@Column(name = "EMAIL")
-	private String Email;
+	private String email;
 
 	@Column(name = "PHONE")
-	private Integer Phone_Number;
+	private Integer phone;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<AddressEntity> address;
@@ -78,43 +78,43 @@ public class UserEntity {
 	}
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
-	public String getPanCard_Number() {
-		return PanCard_Number;
+	public String getPanCard() {
+		return panCard;
 	}
 
-	public void setPanCard_Number(String panCard_Number) {
-		PanCard_Number = panCard_Number;
+	public void setPanCard(String panCard) {
+		this.panCard = panCard;
 	}
 
-	public String getAdharCard_Number() {
-		return AdharCard_Number;
+	public String getAdhar() {
+		return adhar;
 	}
 
-	public void setAdharCard_Number(String adharCard_Number) {
-		AdharCard_Number = adharCard_Number;
+	public void setAdhar(String adhar) {
+		this.adhar = adhar;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
-	public Integer getPhone_Number() {
-		return Phone_Number;
+	public Integer getPhone() {
+		return phone;
 	}
 
-	public void setPhone_Number(Integer phone_Number) {
-		Phone_Number = phone_Number;
+	public void setPhone(Integer phone) {
+		this.phone = phone;
 	}
 
 	public Set<AddressEntity> getAddress() {

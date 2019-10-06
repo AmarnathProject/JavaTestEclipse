@@ -21,7 +21,7 @@ public class UserQuilification {
 	private int qid;
 
 	@Column(name = "NAME")
-	private String nameOfThePerson;
+	private String nameoftheperson;
 
 	@OneToOne
 	@JoinColumn(name = "qid")
@@ -37,7 +37,7 @@ public class UserQuilification {
 
 	@ManyToOne
 	private UserEntity users;
-	
+
 	public UserEntity getUsers() {
 		return users;
 	}
@@ -54,12 +54,12 @@ public class UserQuilification {
 		this.qid = qid;
 	}
 
-	public String getNameOfThePerson() {
-		return nameOfThePerson;
+	public String getNameoftheperson() {
+		return nameoftheperson;
 	}
 
-	public void setNameOfThePerson(String nameOfThePerson) {
-		this.nameOfThePerson = nameOfThePerson;
+	public void setNameoftheperson(String nameoftheperson) {
+		this.nameoftheperson = nameoftheperson;
 	}
 
 	public Set<Matrics> getMatrics() {

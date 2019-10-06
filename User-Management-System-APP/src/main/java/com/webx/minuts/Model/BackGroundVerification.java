@@ -17,16 +17,16 @@ public class BackGroundVerification {
 	private int bid;
 
 	@Column(name = "DOCUMENTS_DETAILS")
-	private String Documents_Details;
+	private String documents_details;
 
 	@Column(name = "CRIMINALS_RECORD")
-	private boolean Criminals_record;
+	private boolean criminals_record;
 
 	@Column(name = "STATUS")
-	private boolean StatusOfVeification;
+	private boolean statusofverification;
 
 	@Column(name = "DOCUMENT_CHECK")
-	private String DocumentsCheck;
+	private String documentcheck;
 
 	@ManyToOne
 	private UserEntity users;
@@ -39,38 +39,36 @@ public class BackGroundVerification {
 		this.bid = bid;
 	}
 
-	public String getDocuments_Details() {
-		return Documents_Details;
+	public String getDocuments_details() {
+		return documents_details;
 	}
 
-	public void setDocuments_Details(String documents_Details) {
-		Documents_Details = documents_Details;
+	public void setDocuments_details(String documents_details) {
+		this.documents_details = documents_details;
 	}
 
 	public boolean isCriminals_record() {
-		return Criminals_record;
+		return criminals_record;
 	}
 
 	public void setCriminals_record(boolean criminals_record) {
-		Criminals_record = criminals_record;
+		this.criminals_record = criminals_record;
 	}
 
-	public boolean isStatusOfVeification() {
-		return StatusOfVeification;
+	public boolean isStatusofverification() {
+		return statusofverification;
 	}
 
-	public void setStatusOfVeification(boolean statusOfVeification) {
-		StatusOfVeification = statusOfVeification;
+	public void setStatusofverification(boolean statusofverification) {
+		this.statusofverification = statusofverification;
 	}
 
-	
-
-	public String getDocumentsCheck() {
-		return DocumentsCheck;
+	public String getDocumentcheck() {
+		return documentcheck;
 	}
 
-	public void setDocumentsCheck(String documentsCheck) {
-		DocumentsCheck = documentsCheck;
+	public void setDocumentcheck(String documentcheck) {
+		this.documentcheck = documentcheck;
 	}
 
 	public UserEntity getUsers() {
