@@ -37,15 +37,12 @@ public class UserEntity {
 	private Integer Phone_Number;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "USER_ID")
 	private Set<AddressEntity> address;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "USER_ID")
 	private Set<UserQuilification> userQualification;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	@JoinColumn(name = "USER_ID")
 	private Set<BackGroundVerification> verification;
 
 	public int getUid() {
