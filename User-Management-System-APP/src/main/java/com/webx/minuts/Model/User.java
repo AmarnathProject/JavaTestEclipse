@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "USER_CALL")
-public class UserEntity {
+public class User {
 
 	@Id
 	@GeneratedValue
@@ -37,7 +37,7 @@ public class UserEntity {
 	private Integer phone;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-	private Set<AddressEntity> address;
+	private Set<Address> address;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<UserQuilification> userQualification;
@@ -117,11 +117,11 @@ public class UserEntity {
 		this.phone = phone;
 	}
 
-	public Set<AddressEntity> getAddress() {
+	public Set<Address> getAddress() {
 		return address;
 	}
 
-	public void setAddress(Set<AddressEntity> address) {
+	public void setAddress(Set<Address> address) {
 		this.address = address;
 	}
 

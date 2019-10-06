@@ -2,17 +2,17 @@ package com.webx.minuts.Dao;
 
 import java.util.List;
 
-import com.webx.minuts.Model.UserEntity;
+import com.webx.minuts.Model.User;
 
 public interface UserDao {
 
-	public List<UserEntity> getUserList();
+	public List<User> getUserList();
 
-	public UserEntity getUserById(int uid);
+	public User getUserById(int uid);
 
-	public void addUser(UserEntity user);
+	public void addUser(User user);
 
-	public void deleteUser(UserEntity user);
+	public void deleteUser(User user);
 
 
 }

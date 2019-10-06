@@ -36,13 +36,13 @@ public class UserQuilification {
 	private Set<Graduation> graduation;
 
 	@ManyToOne
-	private UserEntity users;
+	private User users;
 
-	public UserEntity getUsers() {
+	public User getUsers() {
 		return users;
 	}
 
-	public void setUsers(UserEntity users) {
+	public void setUsers(User users) {
 		this.users = users;
 	}
 

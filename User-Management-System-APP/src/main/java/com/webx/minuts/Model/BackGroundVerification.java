@@ -29,7 +29,7 @@ public class BackGroundVerification {
 	private String documentcheck;
 
 	@ManyToOne
-	private UserEntity users;
+	private User users;
 
 	public int getBid() {
 		return bid;
@@ -71,11 +71,11 @@ public class BackGroundVerification {
 		this.documentcheck = documentcheck;
 	}
 
-	public UserEntity getUsers() {
+	public User getUsers() {
 		return users;
 	}
 
-	public void setUsers(UserEntity users) {
+	public void setUsers(User users) {
 		this.users = users;
 	}
 

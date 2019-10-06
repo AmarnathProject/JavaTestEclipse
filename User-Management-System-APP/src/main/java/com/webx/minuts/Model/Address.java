@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "ADDRESS_CALL")
-public class AddressEntity {
+public class Address {
 
 	@Id
 	@GeneratedValue
@@ -32,7 +32,7 @@ public class AddressEntity {
 	private Integer pincode;
 
 	@ManyToOne
-	private UserEntity users;
+	private User users;
 
 	public int getAddrID() {
 		return addrID;
@@ -82,11 +82,11 @@ public class AddressEntity {
 		this.pincode = pincode;
 	}
 
-	public UserEntity getUsers() {
+	public User getUsers() {
 		return users;
 	}
 
-	public void setUsers(UserEntity users) {
+	public void setUsers(User users) {
 		this.users = users;
 	}
 

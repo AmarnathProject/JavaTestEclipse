@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.webx.minuts.Model.UserEntity;
+import com.webx.minuts.Model.User;
 
 public class UserDaoImpl implements UserDao {
 
@@ -15,25 +15,25 @@ public class UserDaoImpl implements UserDao {
 
 	// get List of Users
 	@SuppressWarnings("unchecked")
-	public List<UserEntity> getUserList() {
+	public List<User> getUserList() {
 
-		return (List<UserEntity>) factory.getCurrentSession().createCriteria(UserEntity.class).list();
+		return (List<User>) factory.getCurrentSession().createCriteria(User.class).list();
 	}
 
 	// get user by specific id
-	public UserEntity getUserById(int uid) {
+	public User getUserById(int uid) {
 
-		return (UserEntity) factory.getCurrentSession().get(UserEntity.class, uid);
+		return (User) factory.getCurrentSession().get(User.class, uid);
 	}
 
 	// Add the user
-	public void addUser(UserEntity user) {
+	public void addUser(User user) {
 
 		factory.getCurrentSession().saveOrUpdate(user);
 	}
 
 	// delete user by id
-	public void deleteUser(UserEntity user) {
+	public void deleteUser(User user) {
 		factory.getCurrentSession().createQuery("DELETE FROM UserEntity WHERE uid = " + user.getId()).executeUpdate();
 
 	}
