@@ -25,8 +25,8 @@ public class BackGroundVerification {
 	@Column(name = "STATUS")
 	private boolean StatusOfVeification;
 
-	@Column(name = "CHECK")
-	private boolean DocumentsCheck;
+	@Column(name = "DOCUMENT_CHECK")
+	private String DocumentsCheck;
 
 	@ManyToOne
 	private UserEntity users;
@@ -63,11 +63,13 @@ public class BackGroundVerification {
 		StatusOfVeification = statusOfVeification;
 	}
 
-	public boolean isDocumentsCheck() {
+	
+
+	public String getDocumentsCheck() {
 		return DocumentsCheck;
 	}
 
-	public void setDocumentsCheck(boolean documentsCheck) {
+	public void setDocumentsCheck(String documentsCheck) {
 		DocumentsCheck = documentsCheck;
 	}
 

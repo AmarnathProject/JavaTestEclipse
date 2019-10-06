@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -33,6 +34,17 @@ public class UserQuilification {
 	@OneToOne
 	@JoinColumn(name = "qid")
 	private Set<Graduation> graduation;
+
+	@ManyToOne
+	private UserEntity users;
+	
+	public UserEntity getUsers() {
+		return users;
+	}
+
+	public void setUsers(UserEntity users) {
+		this.users = users;
+	}
 
 	public int getQid() {
 		return qid;
