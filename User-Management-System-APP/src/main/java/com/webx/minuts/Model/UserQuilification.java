@@ -24,15 +24,12 @@ public class UserQuilification {
 	private String nameoftheperson;
 
 	@OneToOne
-	@JoinColumn(name = "qid")
 	private Set<Matrics> matrics;
 
 	@OneToOne
-	@JoinColumn(name = "qid")
 	private Set<Secoundry_Education> secoundry;
 
 	@OneToOne
-	@JoinColumn(name = "qid")
 	private Set<Graduation> graduation;
 
 	@ManyToOne
