@@ -7,9 +7,15 @@ import javax.validation.constraints.Size;
 /**
  * Created by rajeevkumarsingh on 21/11/17.
  */
+
+//one to one to
+
 @Entity
 @Table(name = "posts")
 public class Post extends AuditModel {
+	//changing here
+	//one to one my name is amarnath
+	
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
