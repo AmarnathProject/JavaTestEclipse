@@ -16,8 +16,8 @@ create table ADDRESS_CALL
    STATE varchar (10),
    COUNTRY varchar (20),
    PINCODE integer (10),
-   USER_ID int,
-   primary key ("ADDR_ID")
+   primary key ("ADDR_ID"),
+   foreign key ("USER_ID") references USER_CALL ("USER_ID")
 );
 create table BACKGROUND
 (
